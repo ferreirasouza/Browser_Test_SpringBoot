@@ -1,21 +1,18 @@
-# Security Policy
+Supported Versions
+Spring Boot:
 
-## Supported Versions
+3.2.x: ✅
+Others: ❌
+JUnit: 4 ✅
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Selenium WebDriver: 4.1.1 (latest stable): ✅
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+Cucumber: 7.0.0 (latest stable): ✅
 
-## Reporting a Vulnerability
+Reporting Vulnerabilities
+To report a vulnerability, please follow these steps:
 
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Identify the Component: Determine which library or component of the project contains the vulnerability.
+Contact the Maintainers: Reach out to the maintainers of the respective library or component to report the vulnerability.
+Follow Responsible Disclosure: Adhere to responsible disclosure practices and cooperate with maintainers to address the issue.
+Please note that only Spring Boot version 3.2.x, JUnit, Selenium WebDriver version 4.1.1, and Cucumber version 7.0.0 are currently supported with security updates. For any other versions or components, no security updates are provided.
