@@ -9,7 +9,18 @@ public class WebDriverManager {
 
     @Autowired
     public WebDriverManager() {
-        System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
+        String os = System.getProperty("os.name").toLowerCase();
+        String driverPath;
+
+        if (os.contains("win")) {
+            driverPath = "src\\test\\resources\\chromedriver.exe"; // Path for Windows
+        } else if (os.contains("linux")) {
+            driverPath = "src/test/resources/chromedriver-linux64/chromedriver"; // Path for Linux
+        } else {
+            throw new IllegalStateException("Unsupported operating system");
+        }
+
+        System.setProperty("webdriver.chrome.driver", driverPath);
         this.driver = new ChromeDriver();
     }
 
